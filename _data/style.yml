@@ -1,0 +1,13 @@
+#Color Customization
+# Game studio brand colors
+highlight: "#A4C439"  # Olive/Yellow-Green
+white: "#E8E5B8"      # Pale Cream/Beige
+black: "#0C2E3D"      # Dark Navy Blue
+
+# Additional brand colors (can be used in custom CSS if needed)
+deep-teal: "#1B6B6D"
+bright-lime: "#D4E157"
+
+#Image Customization
+header-image: "../img/header-bg.png"
+contact-image: "../img/map-image.png"

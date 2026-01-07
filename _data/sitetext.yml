@@ -1,0 +1,100 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: Indie Game Dev Studio
+    text: Nova Ilha
+    button: Projects
+    buttonlink: "#portfolio"
+
+  portfolio:
+    title: "Projects"
+    text: "Here's some of our works."
+    section: portfolio
+    closebutton: "Close Project"
+
+  about:
+    title: "About Us"
+    text: "Florianópolis - Brazil"
+    body: ""
+    section: about
+
+  contact:
+    title: "Contact Us"
+    text: "We'd be happy to hear from you!"
+    section: contact
+    name: "Name*"
+    name-validation: "Please enter your name."
+    email: "Email*"
+    email-validation: "Please enter your email address."
+    message: "Message*"
+    message-validation: "Please enter a message."
+    subject: "Contact Form Submission"
+    submit: "Send Message"
+
+  footer:
+    social:
+      - url: https://t.me/novailhaestudio
+        icon: "fab fa-telegram"
+      - url: https://instagram.com/novailhaestudio
+        icon: "fab fa-instagram"
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+# Portuguese (Brazil)
+# -------------------
+pt-BR: &DEFAULT_PT_BR
+  header:
+    title: Estúdio de Jogos Independente
+    text: Nova Ilha
+    button: Projetos
+    buttonlink: "#portfolio"
+
+  portfolio:
+    title: "Projetos"
+    text: "Aqui estão alguns dos nossos trabalhos."
+    section: portfolio
+    closebutton: "Fechar Projeto"
+
+  about:
+    title: "Sobre Nós"
+    text: "Florianópolis - Brazil"
+    body: ""
+    section: sobre
+
+  contact:
+    title: "Entre em Contato"
+    text: "Ficaríamos felizes em ouvir você!"
+    section: contato
+    name: "Nome*"
+    name-validation: "Por favor, insira seu nome."
+    email: "E-mail*"
+    email-validation: "Por favor, insira seu e-mail."
+    message: "Mensagem*"
+    message-validation: "Por favor, escreva uma mensagem."
+    subject: "Envio do Formulário de Contato"
+    submit: "Enviar Mensagem"
+
+  footer:
+    social:
+      - url: https://t.me/novailhaestudio
+        icon: "fab fa-telegram"
+      - url: https://instagram.com/novailhaestudio
+        icon: "fab fa-instagram"
+pt-br:
+  <<: *DEFAULT_PT_BR

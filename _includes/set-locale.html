@@ -1,0 +1,7 @@
+{% if page.locale %}
+  {% assign locale = page.locale %}
+{% elsif site.locale %}
+  {% assign locale = site.locale %}
+{% else %}
+  {% assign locale = "en" %}
+{% endif %}
