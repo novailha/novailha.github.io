@@ -51,7 +51,7 @@ en: &DEFAULT_EN
         icon: "fab fa-instagram"
       - url: https://tiktok.com/@novailhaestudio
         icon: "fas fa-music"
-      - url: https://youtube.com/novailhaestudio
+      - url: https://youtube.com/@novailhaestudio
         icon: "fab fa-youtube"
 en-US:
   <<: *DEFAULT_EN
