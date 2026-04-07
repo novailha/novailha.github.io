@@ -1,5 +1,15 @@
   {% include set-locale.html %}
 
+  <style>
+    .masthead-link-btn {
+      width: 100%;
+      height: 100%;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
@@ -60,11 +70,30 @@
 	  {%- endif -%}
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase js-scroll-trigger" style="font-size: 1.2em;" href="#newsletter"><i class="fas fa-envelope mr-2"></i> Newsletter</a>
-          <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase" href="https://www.instagram.com/novailhaestudio" target="_blank"><i class="fab fa-instagram mr-2"></i> Instagram</a>
-          <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase" href="https://tiktok.com/@novailhaestudio" target="_blank"><i class="fas fa-music mr-2"></i> TikTok</a>
-          <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase" href="https://t.me/novailhaestudio" target="_blank"><i class="fab fa-telegram mr-2"></i> Telegram</a>
-          <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase" href="https://store.steampowered.com/developer/novailhaestudio" target="_blank"><i class="fas fa-gamepad mr-2"></i> Studio Page on Steam</a>
+          <!-- Social Section -->
+          <div class="row justify-content-center mb-4">
+            <div class="col-sm-6 col-md-4 mb-3 d-flex">
+              <a class="btn btn-primary btn-xl masthead-link-btn text-uppercase" href="https://www.instagram.com/novailhaestudio" target="_blank"><i class="fab fa-instagram mr-2"></i> Instagram</a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex">
+              <a class="btn btn-primary btn-xl masthead-link-btn text-uppercase" href="https://www.youtube.com/@novailhaestudio" target="_blank"><i class="fab fa-youtube mr-2"></i> YouTube</a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex">
+              <a class="btn btn-primary btn-xl masthead-link-btn text-uppercase" href="https://tiktok.com/@novailhaestudio" target="_blank"><i class="fas fa-music mr-2"></i> TikTok</a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex">
+              <a class="btn btn-primary btn-xl masthead-link-btn text-uppercase" href="https://t.me/novailhaestudio" target="_blank"><i class="fab fa-telegram mr-2"></i> Telegram</a>
+            </div>
+          </div>
+          <!-- Extra Section -->
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-4 mb-3 d-flex">
+              <a class="btn btn-primary btn-xl masthead-link-btn text-uppercase js-scroll-trigger" style="font-size: 1.2em;" href="#newsletter"><i class="fas fa-envelope mr-2"></i> Newsletter</a>
+            </div>
+            <div class="col-sm-6 col-md-4 mb-3 d-flex">
+              <a class="btn btn-primary btn-xl masthead-link-btn text-uppercase" href="https://store.steampowered.com/developer/novailhaestudio" target="_blank"><i class="fas fa-gamepad mr-2"></i> Steam Dev Page</a>
+            </div>
+          </div>
         </div>
       </div>
       </div>
@@ -84,7 +113,8 @@
         <div class="col-lg-8 mx-auto">
           <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase js-scroll-trigger" style="font-size: 1.2em;" href="#newsletter"><i class="fas fa-envelope mr-2"></i> Newsletter</a>
           <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase" href="https://www.instagram.com/novailhaestudio" target="_blank"><i class="fab fa-instagram mr-2"></i> Instagram</a>
-          <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase" href="https://tiktok.com/@novailhaestudio" target="_blank"><i class="fas fa-music mr-2"></i> TikTok</a>
+          <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase" href="https://tiktok.com/@novailhaestudio" target="_blank"><i class="fab fa-music mr-2"></i> TikTok</a>
+          <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase" href="https://youtube.com/novailhaestudio" target="_blank"><i class="fab fa-youtube mr-2"></i> YouTube</a>
           <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase" href="https://t.me/novailhaestudio" target="_blank"><i class="fab fa-telegram mr-2"></i> Telegram</a>
           <a class="btn btn-primary btn-xl btn-block mb-3 text-uppercase" href="https://store.steampowered.com/developer/novailhaestudio" target="_blank"><i class="fas fa-gamepad mr-2"></i> Studio Page on Steam</a>
         </div>
