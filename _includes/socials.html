@@ -1,0 +1,1 @@
+{% for x in site.data.site.socials %}{% if x.url != "" %}<a href="{{ x.url }}" rel="noopener" aria-label="{{ x.name }}" title="{{ x.name }}"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="{{ site.data.icons[x.icon] }}"/></svg></a>{% endif %}{% endfor %}

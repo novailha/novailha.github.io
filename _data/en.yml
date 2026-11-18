@@ -1,0 +1,85 @@
+base: /
+notfound: Back to the game
+nav:
+  steam: Steam - coming soon
+  press: Press
+  contact: Contact
+  newsletter: Newsletter
+  legal: Legal notice
+  privacy: Privacy
+meta:
+  title: "ROBOTS EVERYWHERE! - solarpunk hidden object game for PC"
+  description: "A calm solarpunk hidden object game for PC. Travel through the eras as robots inherit a quiet Earth."
+  og: "A quiet Earth, tended by robots."
+hero:
+  badge: Hidden object game for PC
+  tagline: The humans faded away. The robots kept the world running.
+  wishlist: Steam page coming soon
+  more: What is it?
+  chips: [PC, Single player, Chill, Wholesome, Controller support]
+about:
+  title: A world that simply kept going.
+  text: "Across the eras, people build robots that get better at everything. There is no war and no disaster. Humans just become unnecessary and slowly disappear, while the robots keep delivering letters, teaching classes and cleaning streets that are already clean."
+  alt: A solarpunk city overgrown with plants, tended by robots
+  caption: Gameplay screenshots and trailer coming soon.
+features:
+  title: How it plays
+  items:
+    - { title: "🔎 Hundreds of props, a few secrets", text: "Every scene is packed with props. Only some are hidden objects, the rest is there to be admired." }
+    - { title: "🌿 No timers, no pressure", text: "Take your time. A two-step hint system nudges you first and points closer only if you ask." }
+    - { title: "📖 Stories in objects", text: "Early eras hide family photos and toys. Later ones leave stopped clocks, old books and plants growing through the shelves." }
+    - { title: "🌍 One world, many eras", text: "From a cramped 2020s workshop to a megaforest in 2230, watch the same Earth change." }
+eras:
+  title: Eras
+  intro: "5 to 7 levels, from first prototype to a living planet."
+  items:
+    - { year: 2020s, name: First Steps }
+    - { year: 2040s, name: Production }
+    - { year: 2065, name: Integration }
+    - { year: 2095, name: Dependency }
+    - { year: 2130, name: Transition }
+    - { year: 2175, name: Bloom }
+    - { year: 2230, name: Complete Harmony }
+glance:
+  title: At a glance
+  rows:
+    - { k: Genre, v: "Hidden object" }
+    - { k: Platform, v: "PC" }
+    - { k: Players, v: "Single player" }
+    - { k: Levels, v: "5 to 7, from the 2020s to the 2230s" }
+    - { k: Languages, v: "To be announced" }
+    - { k: Release, v: "Date to be announced" }
+    - { k: Editions, v: "Deluxe Edition planned, with digital artbook and soundtrack" }
+    - { k: Studio, v: "Nova Ilha Estúdio, Florianópolis, Brazil" }
+roadmap:
+  title: What's next
+  items:
+    - { when: Now, title: Steam page coming soon, text: "The store page is in preparation." }
+    - { when: Next, title: Free demo, text: "Date to be announced." }
+    - { when: Later, title: Full release, text: "Date to be announced." }
+faq:
+  title: Questions
+  items:
+    - { q: "Is there a demo?", a: "A free demo is planned. Announcements will be shared when the Steam page launches." }
+    - { q: "Is it single player?", a: "Yes, it is a single player game with no timers or penalties." }
+    - { q: "Does it support controllers?", a: "Yes, controller support is planned." }
+    - { q: "Who makes the game?", a: "Nova Ilha Estúdio, a small studio from Florianópolis, Brazil." }
+cta:
+  title: Steam page coming soon
+  text: "The game is in development. Follow our studio for updates and the Steam launch."
+  button: Coming soon
+press_line: "Press and creators:"
+press:
+  intro: "Facts, texts and images for articles and videos. Need something else? Write to us."
+  facts: Facts
+  about: About the game
+  download: Download the press kit
+contact:
+  email: Email for our reply
+  topic: What is it about?
+  choose: Please choose
+  topics: [Question about the game, Bug in the game, Idea or feedback, Press or creator, Collaboration, Something else]
+  message: Your message
+  send: Send message
+  subject: ROBOTS EVERYWHERE! contact form
+  privacy: "Your details go to our form service, which forwards them to us."

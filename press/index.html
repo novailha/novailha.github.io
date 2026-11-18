@@ -1,0 +1,13 @@
+---
+layout: page
+title: Press kit
+---
+{% assign t = site.data[page.lang] %}
+{% assign s = site.data.site %}
+<p>{{ t.press.intro }}</p>
+<h2>{{ t.press.facts }}</h2>
+{% include glance.html %}
+<h2>{{ t.press.about }}</h2>
+<p>{{ t.about.text }}</p>
+{% if s.press_kit_url != "" %}<p><a class="btn" href="{{ s.press_kit_url }}" download>{{ t.press.download }}</a></p>{% endif %}
+{% if s.email != "" %}<p><a href="mailto:{{ s.email }}">{{ s.email }}</a></p>{% endif %}

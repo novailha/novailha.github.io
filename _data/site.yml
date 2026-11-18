@@ -1,0 +1,18 @@
+studio: Nova Ilha Estúdio
+location: Florianópolis, Brazil
+game: ROBOTS EVERYWHERE!
+steam_url: ""
+email: contact@novailha.dev.br
+contact_endpoint: https://formspree.io/f/xeeoyrve
+press_kit_url: "" # e.g. /assets/press/presskit.zip, hidden while empty
+socials:
+  - { name: TikTok, icon: tiktok, url: "https://tiktok.com/@novailhaestudio" }
+  - { name: Instagram, icon: instagram, url: "https://www.instagram.com/novailhaestudio" }
+  - { name: YouTube, icon: youtube, url: "https://youtube.com/@novailhaestudio" }
+  - { name: Telegram, icon: telegram, url: "https://t.me/novailhaestudio" }
+# Optional images, each hidden while empty. Paths start with /assets/img/
+images:
+  studio_logo: ""
+  game_logo: ""
+  hero: ""
+  key_art: "" # 1200x630, also used for social share previews

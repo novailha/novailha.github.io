@@ -1,0 +1,53 @@
+<!doctype html>
+{% assign t = site.data[page.lang] %}
+{% assign s = site.data.site %}
+{% capture title %}{% if page.title %}{{ page.title }} | {{ s.game }}{% else %}{{ t.meta.title }}{% endif %}{% endcapture %}
+<html lang="{{ page.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ page.description | default: t.meta.description }}">
+  <meta name="theme-color" content="#0C2E3D">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ s.game }}">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:description" content="{{ t.meta.og }}">
+  {% if s.images.key_art != "" %}
+  <meta property="og:image" content="{{ s.images.key_art | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  {% endif %}
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="{{ t.base }}">
+      <img class="studio-icon" src="{% if s.images.studio_logo != "" %}{{ s.images.studio_logo }}{% else %}/android-chrome-192x192.png{% endif %}" alt="" aria-hidden="true">
+      <span>{{ s.studio }}</span>
+    </a>
+    {% if page.alt %}<a class="lang" href="{{ page.alt }}">{{ page.alt_label }}</a>{% endif %}
+  </header>
+  <main>{{ content }}</main>
+  <footer>
+    <nav>
+      {% if s.steam_url != "" %}
+      <a href="{{ s.steam_url }}">{{ t.nav.steam }}</a>
+      {% else %}
+      <span class="footer-soon">{{ t.nav.steam }}</span>
+      {% endif %}
+      <a href="{{ t.base }}press/">{{ t.nav.press }}</a>
+      <a href="{{ t.base }}contact/">{{ t.nav.contact }}</a>
+      <a href="{{ t.base }}newsletter/">{{ t.nav.newsletter }}</a>
+      <a href="{{ t.base }}legal-notice/">{{ t.nav.legal }}</a>
+      <a href="{{ t.base }}privacy/">{{ t.nav.privacy }}</a>
+    </nav>
+    <div class="social">{% include socials.html %}</div>
+    <small>© {{ 'now' | date: '%Y' }} {{ s.studio }}</small>
+  </footer>
+</body>
+</html>

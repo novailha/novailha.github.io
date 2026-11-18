@@ -1,0 +1,24 @@
+---
+layout: page
+title: Contact
+---
+{% assign t = site.data[page.lang] %}
+{% assign s = site.data.site %}
+{% if s.contact_endpoint != "" %}
+<form class="form" action="{{ s.contact_endpoint }}" method="post">
+  <label>{{ t.contact.email }} *<input type="email" name="email" required></label>
+  <label>{{ t.contact.topic }} *
+    <select name="topic" required>
+      <option value="">{{ t.contact.choose }}</option>
+      {% for o in t.contact.topics %}<option>{{ o }}</option>{% endfor %}
+    </select>
+  </label>
+  <label>{{ t.contact.message }} *<textarea name="message" rows="6" maxlength="2000" required></textarea></label>
+  <input type="hidden" name="_subject" value="{{ t.contact.subject }}">
+  <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
+  <p class="note">{{ t.contact.privacy }} <a href="{{ t.base }}privacy/">{{ t.nav.privacy }}</a>.</p>
+  <button class="btn" type="submit">{{ t.contact.send }}</button>
+</form>
+{% elsif s.email != "" %}
+<p><a href="mailto:{{ s.email }}">{{ s.email }}</a></p>
+{% endif %}
