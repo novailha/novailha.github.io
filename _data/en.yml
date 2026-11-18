@@ -2,7 +2,7 @@ base: /
 notfound: Back to the game
 nav:
   steam: Steam - coming soon
-  press: Press
+  press: Press Kit
   contact: Contact
   newsletter: Newsletter
   legal: Legal notice
@@ -21,7 +21,6 @@ about:
   title: A world that simply kept going.
   text: "Across the eras, people build robots that get better at everything. There is no war and no disaster. Humans just become unnecessary and slowly disappear, while the robots keep delivering letters, teaching classes and cleaning streets that are already clean."
   alt: A solarpunk city overgrown with plants, tended by robots
-  caption: Gameplay screenshots and trailer coming soon.
 features:
   title: How it plays
   items:
@@ -66,12 +65,12 @@ faq:
     - { q: "Is there a demo?", a: "A free demo is planned. Announcements will be shared when the Steam page launches." }
     - { q: "Is it single player?", a: "Yes, it is a single player game with no timers or penalties." }
     - { q: "Does it support controllers?", a: "Yes, controller support is planned." }
-    - { q: "Who makes the game?", a: "Nova Ilha Estúdio, a small studio from Florianópolis, Brazil." }
+    - { q: "Who made this game?", a: "Nova Ilha Estúdio, a tiny studio from Florianópolis, Brazil." }
 cta:
   title: Steam page coming soon
   text: "The game is in development. Follow our studio for updates and the Steam launch."
   button: Coming soon
-press_line: "Press and creators:"
+press_line: "Press Kit and creators:"
 press:
   intro: "Facts, texts and images for articles and videos. Need something else? Write to us."
   facts: Facts
@@ -81,7 +80,7 @@ contact:
   email: Email for our reply
   topic: What is it about?
   choose: Please choose
-  topics: [Question about the game, Bug in the game, Idea or feedback, Press or creator, Collaboration, Something else]
+  topics: [Question about the game, Bug in the game, Idea or feedback, Press Kit or creator, Collaboration, Something else]
   message: Your message
   send: Send message
   subject: ROBOTS EVERYWHERE! contact form

@@ -14,5 +14,11 @@ socials:
 images:
   studio_logo: ""
   game_logo: ""
-  hero: ""
-  key_art: "" # 1200x630, also used for social share previews
+  hero: "/assets/img/screenshots/level01.png"
+  key_art: "/assets/img/screenshots/level03_rooftop.png" # 1200x630, also used for social share previews
+screenshots:
+  - { path: "/assets/img/screenshots/level01.png", alt: "The first level of ROBOTS EVERYWHERE!", caption: "First Steps" }
+  - { path: "/assets/img/screenshots/level02.png", alt: "The second level of ROBOTS EVERYWHERE!", caption: "Production" }
+  - { path: "/assets/img/screenshots/level03_rooftop.png", alt: "Rooftop scene from the third level", caption: "Rooftop" }
+  - { path: "/assets/img/screenshots/level03_hint.png", alt: "The third level showing a hint", caption: "Hint mode" }
+  - { path: "/assets/img/screenshots/level03_no_hud.png", alt: "The third level with the interface hidden", caption: "Exploration mode" }

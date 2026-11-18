@@ -18,14 +18,7 @@
 <section id="about" class="wrap">
   <h2>{{ t.about.title }}</h2>
   <p class="lead">{{ t.about.text }}</p>
-  {% if s.images.key_art != "" %}
-  <figure>
-    <img src="{{ s.images.key_art }}" alt="{{ t.about.alt }}">
-    <figcaption>{{ t.about.caption }}</figcaption>
-  </figure>
-  {% else %}
-  <p class="note">{{ t.about.caption }}</p>
-  {% endif %}
+  {% include screenshots.html %}
 </section>
 
 <section class="alt"><div class="wrap">
@@ -67,7 +60,7 @@
   <span class="btn coming-soon" aria-disabled="true">{{ t.cta.button }}</span>
   {% endif %}
   <p>
-    {{ t.press_line }} <a href="{{ t.base }}press/">{{ t.nav.press }}</a>
+    {{ t.press_line }} <a href="{{ t.base }}press-kit/">{{ t.nav.press }}</a>
     {% if s.email != "" %} · <a href="mailto:{{ s.email }}">{{ s.email }}</a>{% endif %}
     · <a href="{{ t.base }}contact/">{{ t.nav.contact }}</a>
   </p>

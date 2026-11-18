@@ -49,6 +49,12 @@ h2{font-size:clamp(1.7rem,4vw,2.4rem)}
 figure{margin:2rem 0 0}
 figure img{width:100%;border-radius:18px}
 figcaption{font-size:.9rem;opacity:.7;margin-top:.5rem}
+.screenshots{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.25rem;margin-top:2rem}
+.screenshots figure{margin:0}
+.screenshots figure>a{display:block}
+.screenshots figure:first-child{grid-column:1/-1}
+.screenshots img{display:block;aspect-ratio:16/9;object-fit:cover;border:1px solid var(--line);box-shadow:0 8px 18px rgba(0,0,0,.24)}
+@media(max-width:760px){.screenshots{grid-template-columns:1fr}.screenshots figure:first-child{grid-column:auto}}
 .rows{list-style:none;padding:0;display:grid;gap:.75rem}
 .rows li{display:grid;grid-template-columns:6rem 1fr;gap:1rem}
 .rows b{color:var(--bright)}

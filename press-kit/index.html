@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Press kit
+title: Press Kit
 ---
 {% assign t = site.data[page.lang] %}
 {% assign s = site.data.site %}
@@ -9,5 +9,7 @@ title: Press kit
 {% include glance.html %}
 <h2>{{ t.press.about }}</h2>
 <p>{{ t.about.text }}</p>
+<h2>Screenshots</h2>
+{% include screenshots.html %}
 {% if s.press_kit_url != "" %}<p><a class="btn" href="{{ s.press_kit_url }}" download>{{ t.press.download }}</a></p>{% endif %}
 {% if s.email != "" %}<p><a href="mailto:{{ s.email }}">{{ s.email }}</a></p>{% endif %}
