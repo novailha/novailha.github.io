@@ -16,7 +16,7 @@ hero:
   tagline: The humans faded away. The robots kept the world running.
   wishlist: Steam page coming soon
   more: What is it?
-  chips: [PC, Single player, Chill, Wholesome, Controller support]
+  chips: [PC, Single player, Chill, Wholesome, Controller support, Steam Deck planned]
 about:
   title: A world that simply kept going.
   text: "Across the eras, people build robots that get better at everything. There is no war and no disaster. Humans just become unnecessary and slowly disappear, while the robots keep delivering letters, teaching classes and cleaning streets that are already clean."
@@ -42,6 +42,9 @@ eras:
     - { year: 2230, name: Complete Harmony }
 glance:
   title: At a glance
+  columns:
+    title: Title
+    description: Description
   rows:
     - { k: Genre, v: "Hidden object" }
     - { k: Platform, v: "PC" }

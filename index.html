@@ -48,8 +48,8 @@
 
 <section class="wrap">
   <h2>{{ t.roadmap.title }}</h2>
-  <ol class="rows">
-    {% for r in t.roadmap.items %}<li><b>{{ r.when }}</b><div><strong>{{ r.title }}</strong><br>{{ r.text }}</div></li>{% endfor %}
+  <ol class="rows roadmap">
+    {% for r in t.roadmap.items %}<li{% if forloop.first %} class="active" aria-current="step"{% endif %}><b>{{ r.when }}</b><div><strong>{{ r.title }}</strong><br>{{ r.text }}</div></li>{% endfor %}
   </ol>
 </section>
 

@@ -4,10 +4,10 @@
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.6 "Space Grotesk",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 img{max-width:100%;height:auto}
 a{color:var(--bright)}
-h1,h2,h3{font-family:Georgia,serif;line-height:1.2;margin:0 0 .5em}
+h1,h2,h3{font-family:Oxanium,system-ui,sans-serif;font-weight:800;line-height:1.2;margin:0 0 .5em}
 h2{font-size:clamp(1.7rem,4vw,2.4rem)}
 .wrap{max-width:1040px;margin:0 auto;padding:4rem 1.25rem}
 .prose{max-width:720px}
@@ -16,8 +16,9 @@ h2{font-size:clamp(1.7rem,4vw,2.4rem)}
 .lead{font-size:1.2rem}
 .note{font-size:.85rem;opacity:.7;margin:0}
 
-.top{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.25rem;padding-top:calc(1rem + env(safe-area-inset-top));background:var(--navy)}
-.top .brand{display:flex;align-items:center;gap:.65rem}
+.top{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;padding:1rem 1.25rem;padding-top:calc(1rem + env(safe-area-inset-top));background:var(--teal);border-bottom:3px solid var(--lime);box-shadow:0 4px 12px rgba(0,0,0,.3)}
+.top .brand{grid-column:2;justify-self:center;display:flex;align-items:center;gap:.65rem}
+.top .lang{grid-column:3;justify-self:end}
 .top a{color:var(--cream);text-decoration:none;font-weight:700;letter-spacing:.03em}
 .top img{height:40px;width:auto;display:block}
 .top .studio-icon{width:40px;object-fit:contain}
@@ -28,12 +29,13 @@ h2{font-size:clamp(1.7rem,4vw,2.4rem)}
 .hero .logo{width:min(560px,90%)}
 .badge{display:inline-block;background:var(--lime);color:var(--navy);padding:.25rem .9rem;border-radius:999px;font-size:.9rem;font-weight:700}
 .tagline{font-size:clamp(1.1rem,2.5vw,1.5rem);max-width:640px;margin:1rem auto 2rem}
-.btn{display:inline-block;background:var(--lime);color:var(--navy);padding:.8rem 1.5rem;border:2px solid var(--lime);border-radius:10px;font:700 1rem system-ui,sans-serif;text-decoration:none;cursor:pointer}
-.btn:hover{background:var(--bright);border-color:var(--bright)}
-.btn.coming-soon{background:var(--teal);color:var(--cream);border-color:var(--teal);cursor:default}
+.btn{display:inline-block;background:var(--lime);color:var(--navy);padding:.8rem 1.5rem;border:2px solid var(--lime);border-radius:10px;font:800 1rem "Space Grotesk",system-ui,sans-serif;text-decoration:none;cursor:pointer;box-shadow:0 8px 0 #667a22,0 13px 20px rgba(0,0,0,.3);transition:transform .12s ease,box-shadow .12s ease,background-color .12s ease}
+.btn:hover:not(.coming-soon){background:var(--bright);border-color:var(--bright);transform:translateY(-2px);box-shadow:0 10px 0 #667a22,0 16px 24px rgba(0,0,0,.3)}
+.btn:active:not(.coming-soon){transform:translateY(5px);box-shadow:0 3px 0 #667a22,0 5px 8px rgba(0,0,0,.3)}
+.btn.coming-soon{background:var(--teal);color:var(--cream);border-color:var(--teal);cursor:default;box-shadow:0 8px 0 #104a4b,0 13px 20px rgba(0,0,0,.3)}
 .btn.coming-soon:hover{background:var(--teal);border-color:var(--teal)}
-.btn.ghost{background:var(--cream);color:var(--navy);border-color:var(--cream)}
-.btn.ghost:hover{background:var(--bright);border-color:var(--bright)}
+.btn.ghost{background:var(--cream);color:var(--navy);border-color:var(--cream);box-shadow:0 8px 0 #a9a681,0 13px 20px rgba(0,0,0,.3)}
+.btn.ghost:hover{background:var(--bright);border-color:var(--bright);box-shadow:0 10px 0 #a9a681,0 16px 24px rgba(0,0,0,.3)}
 .chips{list-style:none;display:flex;flex-wrap:wrap;gap:.5rem;justify-content:center;padding:0;margin:2rem 0 0}
 .chips li{background:var(--teal);color:var(--cream);border:2px solid var(--lime);border-radius:999px;padding:.2rem .9rem;font-size:.9rem;font-weight:700}
 .chips.era{justify-content:flex-start;margin:1.5rem 0 0}
@@ -42,7 +44,7 @@ h2{font-size:clamp(1.7rem,4vw,2.4rem)}
 
 .grid{display:grid;gap:1.25rem;grid-template-columns:repeat(4,minmax(0,1fr))}
 @media(max-width:760px){.grid{grid-template-columns:repeat(4,minmax(240px,1fr));overflow-x:auto;padding-bottom:.5rem}}
-.card,.rows li{background:#103744;border:1px solid var(--line);border-radius:18px;padding:1.2rem 1.4rem}
+.card,.rows li{background:#103744;border:1px solid var(--line);border-radius:18px;padding:1.2rem 1.4rem;box-shadow:0 8px 18px rgba(0,0,0,.24)}
 .card h3{font-size:1.2rem}
 figure{margin:2rem 0 0}
 figure img{width:100%;border-radius:18px}
@@ -50,11 +52,23 @@ figcaption{font-size:.9rem;opacity:.7;margin-top:.5rem}
 .rows{list-style:none;padding:0;display:grid;gap:.75rem}
 .rows li{display:grid;grid-template-columns:6rem 1fr;gap:1rem}
 .rows b{color:var(--bright)}
-dl{display:grid;grid-template-columns:max-content 1fr;gap:.6rem 2rem}
-dt{font-weight:700}
-dd{margin:0}
+.rows.roadmap{position:relative;margin-left:.5rem;padding-left:1.5rem}
+.rows.roadmap::before{content:"";position:absolute;left:.25rem;top:.5rem;bottom:.5rem;width:3px;background:var(--teal)}
+.rows.roadmap li{position:relative}
+.rows.roadmap li::before{content:"";position:absolute;left:-1.6rem;top:1.45rem;width:.7rem;height:.7rem;border-radius:50%;background:var(--teal);border:2px solid var(--paper)}
+.rows.roadmap li.active::before{background:var(--lime);box-shadow:0 0 0 3px var(--teal)}
+.glance-scroll{overflow-x:auto}
+.glance-table{width:100%;min-width:760px;table-layout:fixed;border-collapse:separate;border-spacing:.75rem;text-align:left}
+.glance-table caption{text-align:left;color:var(--bright);font-size:.9rem;font-weight:700;padding:0 0 .25rem}
+.glance-table td{width:25%;background:#103744;border:1px solid var(--line);border-radius:14px;padding:1rem;vertical-align:top;box-shadow:0 8px 18px rgba(0,0,0,.24)}
+.glance-item{margin:0}
+.glance-item dt{font-weight:700;color:var(--bright);margin-bottom:.35rem}
+.glance-item dd{margin:0}
 details{border-bottom:1px solid var(--line);padding:.9rem 0}
 summary{cursor:pointer;font-weight:700}
+details::details-content{height:0;overflow:clip;interpolate-size:allow-keywords;transition:height .3s ease,content-visibility .3s allow-discrete}
+details[open]::details-content{height:auto}
+@media(prefers-reduced-motion:reduce){details::details-content{transition:none}}
 
 .form{display:grid;gap:1rem}
 .form label{display:grid;gap:.3rem;font-weight:600}
