@@ -81,8 +81,16 @@ screenshots:
   - { path: "/assets/img/screenshots/level01.png", alt: "Primeira fase de ROBOTS EVERYWHERE!", caption: "Primeiros Passos" }
   - { path: "/assets/img/screenshots/level02.png", alt: "Segunda fase de ROBOTS EVERYWHERE!", caption: "Produção" }
   - { path: "/assets/img/screenshots/level03_rooftop.png", alt: "Cena do terraço da terceira fase", caption: "Terraço" }
-  - { path: "/assets/img/screenshots/level03_hint.png", alt: "Terceira fase mostrando uma dica", caption: "Modo dica" }
+  - { path: "/assets/img/screenshots/level03_extra_hint.png", alt: "Terceira fase mostrando uma dica extra", caption: "Modo dica" }
   - { path: "/assets/img/screenshots/level03_no_hud.png", alt: "Terceira fase sem interface", caption: "Modo exploração" }
+press_screenshots:
+  - { path: "/assets/img/screenshots/level01.png", alt: "Primeira fase de ROBOTS EVERYWHERE!", caption: "Primeiros Passos" }
+  - { path: "/assets/img/screenshots/level02.png", alt: "Segunda fase de ROBOTS EVERYWHERE!", caption: "Produção" }
+  - { path: "/assets/img/screenshots/level03_rooftop.png", alt: "Cena do terraço da terceira fase", caption: "Terraço" }
+  - { path: "/assets/img/screenshots/level03_extra_hint.png", alt: "Terceira fase mostrando uma dica extra", caption: "Modo dica" }
+  - { path: "/assets/img/screenshots/level03_no_hud.png", alt: "Terceira fase sem interface", caption: "Modo exploração" }
+  - { path: "/assets/img/screenshots/main_menu.png", alt: "Menu principal", caption: "Menu principal" }
+  - { path: "/assets/img/screenshots/level_select.png", alt: "Tela de seleção de fases", caption: "Seleção de fases" }
 contact:
   email: Seu email
   topic: Qual é o assunto?

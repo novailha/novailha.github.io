@@ -11,6 +11,6 @@ pt_url: /pt-br/press-kit/
 <h2>{{ t.press.about }}</h2>
 <p>{{ t.about.text }}</p>
 <h2>Screenshots</h2>
-{% include screenshots.html %}
+{% include screenshots.html items=t.press_screenshots %}
 {% if s.press_kit_url != "" %}<p><a class="btn" href="{{ s.press_kit_url }}" download>{{ t.press.download }}</a></p>{% endif %}
 {% if s.email != "" %}<p><a href="mailto:{{ s.email }}">{{ s.email }}</a></p>{% endif %}

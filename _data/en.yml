@@ -101,5 +101,13 @@ screenshots:
   - { path: "/assets/img/screenshots/level01.png", alt: "The first level of ROBOTS EVERYWHERE!", caption: "First Steps" }
   - { path: "/assets/img/screenshots/level02.png", alt: "The second level of ROBOTS EVERYWHERE!", caption: "Production" }
   - { path: "/assets/img/screenshots/level03_rooftop.png", alt: "Rooftop scene from the third level", caption: "Rooftop" }
-  - { path: "/assets/img/screenshots/level03_hint.png", alt: "The third level showing a hint", caption: "Hint mode" }
+  - { path: "/assets/img/screenshots/level03_extra_hint.png", alt: "The third level showing an extra hint", caption: "Hint mode" }
   - { path: "/assets/img/screenshots/level03_no_hud.png", alt: "The third level with the interface hidden", caption: "Exploration mode" }
+press_screenshots:
+  - { path: "/assets/img/screenshots/level01.png", alt: "The first level of ROBOTS EVERYWHERE!", caption: "First Steps" }
+  - { path: "/assets/img/screenshots/level02.png", alt: "The second level of ROBOTS EVERYWHERE!", caption: "Production" }
+  - { path: "/assets/img/screenshots/level03_rooftop.png", alt: "Rooftop scene from the third level", caption: "Rooftop" }
+  - { path: "/assets/img/screenshots/level03_extra_hint.png", alt: "The third level showing an extra hint", caption: "Hint mode" }
+  - { path: "/assets/img/screenshots/level03_no_hud.png", alt: "The third level with the interface hidden", caption: "Exploration mode" }
+  - { path: "/assets/img/screenshots/main_menu.png", alt: "Main menu", caption: "Main menu" }
+  - { path: "/assets/img/screenshots/level_select.png", alt: "Level selection screen", caption: "Level select" }

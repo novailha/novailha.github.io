@@ -1,5 +1,6 @@
+{% assign gallery = include.items | default: t.screenshots %}
 <div class="screenshots">
-  {% for screenshot in t.screenshots %}
+  {% for screenshot in gallery %}
   <figure>
     <a href="{{ screenshot.path }}">
       <img src="{{ screenshot.path }}" alt="{{ screenshot.alt }}" loading="{% if forloop.first %}eager{% else %}lazy{% endif %}">
