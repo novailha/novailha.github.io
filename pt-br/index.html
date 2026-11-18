@@ -1,0 +1,45 @@
+---
+layout: default
+lang: pt-BR
+title: Inicio
+en_url: /
+---
+{% assign t = site.data[page.lang] %}
+{% assign s = site.data.site %}
+<section class="hero"{% if s.images.hero != "" %} style="--hero:url('{{ s.images.hero }}')"{% endif %}>
+  <span class="badge">{{ t.hero.badge }}</span>
+  <h1>{% if s.images.game_logo != "" %}<img class="logo" src="{{ s.images.game_logo }}" alt="{{ s.game }}">{% else %}{{ s.game }}{% endif %}</h1>
+  <p class="tagline">{{ t.hero.tagline }}</p>
+  {% if s.steam_url != "" %}<a class="btn" href="{{ s.steam_url }}">{{ t.hero.wishlist }}</a>{% else %}<span class="btn coming-soon" aria-disabled="true">{{ t.hero.wishlist }}</span>{% endif %}
+  <a class="btn ghost" href="#about">{{ t.hero.more }}</a>
+  <ul class="chips">{% for c in t.hero.chips %}<li>{{ c }}</li>{% endfor %}</ul>
+</section>
+<section id="about" class="wrap">
+  <h2>{{ t.about.title }}</h2>
+  <p class="lead">{{ t.about.text }}</p>
+  {% include screenshots.html %}
+</section>
+<section class="alt"><div class="wrap">
+  <h2>{{ t.features.title }}</h2>
+  <div class="grid">{% for f in t.features.items %}<div class="card"><h3>{{ f.title }}</h3><p>{{ f.text }}</p></div>{% endfor %}</div>
+</div></section>
+<section class="wrap">
+  <h2>{{ t.eras.title }}</h2>
+  <p>{{ t.eras.intro }}</p>
+  <ul class="chips era">{% for e in t.eras.items %}<li><b>{{ e.year }}</b> {{ e.name }}</li>{% endfor %}</ul>
+</section>
+<section class="alt"><div class="wrap"><h2>{{ t.glance.title }}</h2>{% include glance.html %}</div></section>
+<section class="wrap">
+  <h2>{{ t.roadmap.title }}</h2>
+  <ol class="rows roadmap">{% for r in t.roadmap.items %}<li{% if forloop.first %} class="active" aria-current="step"{% endif %}><b>{{ r.when }}</b><div><strong>{{ r.title }}</strong><br>{{ r.text }}</div></li>{% endfor %}</ol>
+</section>
+<section class="alt"><div class="wrap prose">
+  <h2>{{ t.faq.title }}</h2>
+  {% for q in t.faq.items %}<details><summary>{{ q.q }}</summary><p>{{ q.a }}</p></details>{% endfor %}
+</div></section>
+<section class="wrap center">
+  <h2>{{ t.cta.title }}</h2>
+  <p>{{ t.cta.text }}</p>
+  {% if s.steam_url != "" %}<a class="btn" href="{{ s.steam_url }}">{{ t.cta.button }}</a>{% else %}<span class="btn coming-soon" aria-disabled="true">{{ t.cta.button }}</span>{% endif %}
+  <p>{{ t.press_line }} <a href="{{ t.base }}press-kit/">{{ t.nav.press }}</a>{% if s.email != "" %} · <a href="mailto:{{ s.email }}">{{ s.email }}</a>{% endif %} · <a href="{{ t.base }}contact/">{{ t.nav.contact }}</a></p>
+</section>

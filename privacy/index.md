@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy
+pt_url: /pt-br/privacy/
 ---
 {% assign s = site.data.site %}
 This site runs no analytics and loads no third-party fonts. The only third-party scripts are on the newsletter page (Brevo and Google reCAPTCHA).

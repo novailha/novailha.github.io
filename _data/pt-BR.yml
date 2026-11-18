@@ -1,0 +1,105 @@
+base: /pt-br/
+notfound: Voltar ao jogo
+nav:
+  steam: Steam - em breve
+  press: Kit de imprensa
+  contact: Contato
+  newsletter: Newsletter
+  legal: Aviso legal
+  privacy: Privacidade
+meta:
+  title: "ROBOTS EVERYWHERE! - jogo solarpunk de objeto oculto para PC"
+  description: "Um jogo tranquilinho de objetos ocultos com um clima solarpunk para PC. Viaje pelas eras enquanto os robôs cuidam de uma Terra bem calma."
+  og: "Uma Terra tranquila, cuidada pelos robôs."
+hero:
+  badge: Jogo de objetos ocultos para PC
+  tagline: Os humanos sumiram. Os robôs continuaram cuidando do mundo.
+  wishlist: Página da Steam em breve
+  more: O que é?
+  chips: [PC, Um jogador, Relaxante, Aconchegante, Suporta controle, Steam Deck planejado]
+about:
+  title: Um mundo que seguiu em frente.
+  text: "Com o passar das eras, as pessoas foram criando robôs cada vez melhores em tudo. Não tem guerra nem desastre. Os humanos só vão ficando desnecessários e sumindo aos poucos, enquanto os robôs continuam entregando cartas, dando aulas e limpando ruas que já estão limpinhas."
+  alt: Uma cidade solarpunk tomada por plantas, cuidada por robôs
+features:
+  title: Como jogar
+  items:
+    - { title: "🔎 Muitas coisas, poucos segredos", text: "Cada cena está cheia de objetos. Só alguns são os que você precisa encontrar; o resto está lá só para curtir." }
+    - { title: "🌿 Sem pressa nem pressão", text: "Vai no seu tempo. As dicas vêm em duas etapas: primeiro dão uma ideia e, se você pedir de novo, apontam mais perto." }
+    - { title: "📖 Histórias escondidas", text: "Nas primeiras eras, rolam fotos de família e brinquedos. Depois aparecem relógios parados, livros antigos e plantas crescendo nas estantes." }
+    - { title: "🌍 Um mundo, várias eras", text: "Da oficina apertada dos anos 2020 até uma megafloresta, dá para ver a mesma Terra evoluir." }
+eras:
+  title: Eras
+  intro: "5 fases, do primeiro protótipo até um planeta cheio de vida."
+  items:
+    - { year: 2020s, name: Primeiros Passos }
+    - { year: 2040s, name: Produção }
+    - { year: 2065, name: Integração }
+    - { year: 2095, name: Dependência }
+    - { year: 2130, name: Transição }
+glance:
+  title: Resumo
+  columns:
+    title: Título
+    description: Descrição
+  rows:
+    - { k: Gênero, v: "Objetos ocultos" }
+    - { k: Plataforma, v: "PC" }
+    - { k: Sistemas suportados, v: "Windows, Linux" }
+    - { k: Jogadores, v: "Um jogador" }
+    - { k: Fases, v: "5, dos anos 2020 aos anos 2130" }
+    - { k: Idiomas, v: "A ser anunciado" }
+    - { k: Lançamento, v: "Data a ser anunciada" }
+    - { k: Edições, v: "Edição Deluxe planejada, com artbook digital e trilha sonora" }
+    - { k: Estúdio, v: "Nova Ilha Estúdio, Florianópolis, Brasil" }
+roadmap:
+  title: O que vem por aí
+  items:
+    - { when: Agora, title: Página da Steam em breve, text: "Estamos preparando a página da loja." }
+    - { when: Depois, title: Demo gratuita, text: "Data a ser anunciada." }
+    - { when: Mais tarde, title: Lançamento completo, text: "Data a ser anunciada." }
+faq:
+  title: Perguntas
+  items:
+    - { q: "Tem demo?", a: "Tem uma demo gratuita planejada. A gente avisa assim que a página da Steam estiver no ar." }
+    - { q: "É só para uma pessoa jogar?", a: "Sim. É um jogo solo, sem cronômetro nem penalidades." }
+    - { q: "Linux é suportado?", a: "Sim! ROBOTS EVERYWHERE! vai rodar no Linux e no Windows." }
+    - { q: "Funciona com controle?", a: "Sim, controle está nos planos." }
+    - { q: "Vocês usam IA generativa?", a: "Usamos ferramentas de auxílio ao código. Todo o resto foi feito por humanos, sem IA generativa." }
+    - { q: "Quem fez este jogo?", a: "A Nova Ilha Estúdio, um estúdio pequeno de Florianópolis." }
+cta:
+  title: Pagina da Steam em breve
+  text: "Estamos desenvolvendo o jogo. Siga a gente para acompanhar as novidades e o lançamento na Steam."
+  button: Em breve
+press_line: "Kit de imprensa e criadores:"
+press:
+  intro: "Informações, textos e imagens para artigos e vídeos. Precisa de mais alguma coisa? Manda uma mensagem."
+  facts: Informações
+  about: Sobre o jogo
+  download: Baixar o kit de imprensa
+screenshots:
+  - { path: "/assets/img/screenshots/level01.png", alt: "Primeira fase de ROBOTS EVERYWHERE!", caption: "Primeiros Passos" }
+  - { path: "/assets/img/screenshots/level02.png", alt: "Segunda fase de ROBOTS EVERYWHERE!", caption: "Produção" }
+  - { path: "/assets/img/screenshots/level03_rooftop.png", alt: "Cena do terraço da terceira fase", caption: "Terraço" }
+  - { path: "/assets/img/screenshots/level03_hint.png", alt: "Terceira fase mostrando uma dica", caption: "Modo dica" }
+  - { path: "/assets/img/screenshots/level03_no_hud.png", alt: "Terceira fase sem interface", caption: "Modo exploração" }
+contact:
+  email: Seu email
+  topic: Qual é o assunto?
+  choose: Escolha uma opção
+  topics: [Pergunta sobre o jogo, Problema no jogo, Ideia ou feedback, Kit de imprensa ou criador, Colaboração, Outra coisa]
+  message: Mensagem
+  send: Enviar mensagem
+  subject: contato de ROBOTS EVERYWHERE!
+  privacy: "Usamos um serviço de formulários para receber sua mensagem e responder."
+newsletter:
+  title: Newsletter
+  intro: Receba novidades dos nossos projetos direto no seu email.
+  email_label: Digite seu email
+  specification: Só novidades do estúdio. Sem spam e bem pouco por mês.
+  subscribe: Assinar
+  error: Sua inscrição não pode ser salva. Tente novamente.
+  success: Sua inscrição foi realizada com sucesso.
+  country_error: Selecione um código de país
+  invalid: As informações fornecidas são inválidas. Revise o formato dos campos e tente novamente.
+  required: Este campo não pode ficar vazio.

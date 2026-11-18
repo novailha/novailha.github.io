@@ -1,13 +1,5 @@
-<div class="glance-scroll">
-  <table class="glance-table">
-    <caption>{{ t.glance.columns.title }} / {{ t.glance.columns.description }}</caption>
-    <tbody>
-      {% for r in t.glance.rows %}
-      {% assign cell_index = forloop.index0 | modulo: 4 %}
-      {% if cell_index == 0 %}<tr>{% endif %}
-      <td><dl class="glance-item"><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></dl></td>
-      {% if cell_index == 3 or forloop.last %}</tr>{% endif %}
-      {% endfor %}
-    </tbody>
-  </table>
+<div class="glance-grid" aria-label="{{ t.glance.columns.title }} / {{ t.glance.columns.description }}">
+  {% for r in t.glance.rows %}
+  <dl class="glance-item"><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></dl>
+  {% endfor %}
 </div>

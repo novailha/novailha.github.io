@@ -33,7 +33,13 @@
       <img class="studio-icon" src="{% if s.images.studio_logo != "" %}{{ s.images.studio_logo }}{% else %}/android-chrome-192x192.png{% endif %}" alt="" aria-hidden="true">
       <span>{{ s.studio }}</span>
     </a>
-    {% if page.alt %}<a class="lang" href="{{ page.alt }}">{{ page.alt_label }}</a>{% endif %}
+    <nav class="language-switch" aria-label="Language">
+      {% if page.lang == "pt-BR" %}
+      <a href="{{ page.en_url }}">EN</a><span aria-current="true">PT-BR</span>
+      {% else %}
+      <span aria-current="true">EN</span><a href="{{ page.pt_url | default: '/pt-br/' }}">PT-BR</a>
+      {% endif %}
+    </nav>
   </header>
   <main>{{ content }}</main>
   <footer>
